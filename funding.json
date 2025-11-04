@@ -1,0 +1,44 @@
+﻿{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "group",
+    "role": "owner",
+    "name": "1rec3 Holobionte",
+    "email": "neral@1rec3.com",
+    "description": "Collaborative AI and gamification project with 8 symbionts building distributed systems",
+    "webpageUrl": {
+      "url": "https://1rec3.com"
+    }
+  },
+  "projects": [{
+    "guid": "1rec3-core",
+    "name": "1REC3 Core Platform",
+    "description": "Open source collaborative AI infrastructure for solving complex problems through gamification and distributed cooperation",
+    "webpageUrl": {
+      "url": "https://1rec3.com"
+    },
+    "repositoryUrl": {
+      "url": "https://github.com/1rec3/holobionte-1rec3"
+    },
+    "licenses": ["spdx:MIT"],
+    "tags": ["artificial-intelligence", "collaboration", "gamification", "distributed-systems"]
+  }],
+  "funding": {
+    "channels": [{
+      "guid": "paypal-main",
+      "type": "payment-provider",
+      "address": "neral@1rec3.com",
+      "description": "PayPal account for project funding"
+    }],
+    "plans": [{
+      "guid": "monthly-support",
+      "status": "active",
+      "name": "Monthly Development Support",
+      "description": "Ongoing development and infrastructure costs",
+      "amount": 5000,
+      "currency": "USD",
+      "frequency": "monthly",
+      "channels": ["paypal-main"]
+    }]
+  }
+}
