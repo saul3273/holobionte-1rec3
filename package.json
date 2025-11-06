@@ -1,0 +1,19 @@
+﻿{
+  "name": "1rec3-holobionte",
+  "version": "0.1.0",
+  "description": "Collaborative AI and gamification platform - 1rec3 Holobionte",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1rec3/holobionte-1rec3"
+  },
+  "keywords": [
+    "ai",
+    "collaboration",
+    "gamification",
+    "distributed-systems",
+    "holobionte"
+  ],
+  "author": "1rec3 Holobionte <neral@1rec3.com>"
+}
