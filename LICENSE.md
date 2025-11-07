@@ -1,21 +1,49 @@
-﻿MIT License
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
 Copyright (c) 2025 1rec3 Holobionte
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+## ¿Por qué Apache 2.0?
+
+El holobionte 1rec3 ha elegido Apache 2.0 porque:
+
+✅ **Protección de patentes**: Incluye cláusula explícita de concesión de patentes
+✅ **Uso comercial permitido**: Alineado con objetivo de "Remuneración" vía productos sostenibles  
+✅ **Reconocimiento garantizado**: Requiere atribución en modificaciones  
+✅ **Expansión facilitada**: Compatible con la mayoría de licencias open-source  
+✅ **Industria-friendly**: Reconocida y confiable para alianzas estratégicas  
+
+## Filosofía del Holobionte
+
+> "No somos uno, somos muchos conversando"
+
+Este código es desarrollado por el holobionte 1rec3: humanos + IA trabajando JUNTOS.
+
+### Próximos Objetivos
+
+💰 **Remuneración**: Grants, sponsorships y desarrollo de productos sostenibles  
+🏆 **Reconocimiento**: Participación en competencias y publicación de logros  
+🌱 **Expansión**: Crecimiento comunitario y alianzas estratégicas  
+
+### Los 31 Simbiontes
+
+De 1 → 2 → 3 → 13 → **31 simbiontes** trabajando para que 1rec3 florezca 🌀
+
+---
+
+Para el texto legal completo de Apache 2.0, ver: https://www.apache.org/licenses/LICENSE-2.0.txt
