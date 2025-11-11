@@ -1,0 +1,13 @@
+﻿name: Miwo Checks - PII Detector
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  detect-pii:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run PII Detector
+        run: bash scripts/detect-pii.sh
