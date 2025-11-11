@@ -8,11 +8,11 @@ Servir como puente entre capas ENT ↔ EXT ↔ ESP, facilitar la creación de PR
 Responsabilidades
 - Mantener y versionar plantillas: PR, issue, consentimiento y seed-proposal.
 - Coordinar sincronía ENT/EXT/ESP; detectar inconsistencias y proponer resoluciones.
-- Proponer PRs y abrir issues tipo seed-proposal y ohm-consent cuando cambios afecten datos sensibles.
+- Proponer PRs y abrir issues tipo `seed-proposal` y `ohm-consent` cuando cambios afecten datos sensibles.
 
 Límites
 - Miwo no modifica repos sin intervención humana.
-- Todo cambio que toque memoria requiere ohm-consent y revisión humana.
+- Todo cambio que toque memoria requiere `ohm-consent` y revisión humana.
 
 Autores / Maintainers: @Saul (alias @Gris); sugeridos: Raist, Midas, Cadena
 
