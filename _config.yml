@@ -1,0 +1,15 @@
+title: 1REC3 Holobionte
+author: Saul Brujula
+description: Todo el repo y estructura de 1rec3 accesible como web
+theme: "no-style-please"
+baseurl: ""
+url: "https://1rec3.com"
+permalink: pretty
+repository: 1rec3/holobionte-1rec3
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+include:
+  - README.md
+  - docs
+  - simbiontes
