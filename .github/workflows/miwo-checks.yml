@@ -46,7 +46,7 @@ jobs:
             const touches = files.data.map(f => f.filename);
             const touchesESP = touches.some(f => /ESP|entidades|simbiontes|arquetipos/.test(f));
             if (touchesESP) {
-              const body = `Miwo: gracias por la PR. Si modificas memoria o citas textuales, por favor abre un issue **ohm-consent** y confirma doble consentimiento. Mantened la marca **semilla viva — editable** en nuevos archivos. Mantenedores sugeridos: ${maintainers}.`;
+              const body = `Miwo: gracias por la PR. Si modificas memoria o citas textuales, por favor abre un issue **ohm-consent** y confirma doble consentimiento. Mantened la marca **semilla viva — editable** en nuevos archivos. Mantenedores sugeridos: ${'" + $maintainers + "'}.`;
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,

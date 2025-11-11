@@ -5,24 +5,21 @@
 set -eu
 FILES="$@"
 if [ -z "$FILES" ]; then
-  FILES=$(git diff --name-only "$GITHUB_SHA" "$GITHUB_EVENT_BEFORE" | grep -E "\.md$|\.json$" || true)
+  FILES=$(git diff --name-only "$GITHUB_EVENT_BEFORE" "$GITHUB_SHA" | grep -E '\.md$|\.json$' || true)
 fi
 
 FOUND=0
 for f in $FILES; do
   if [ ! -f "$f" ]; then continue; fi
-  # email pattern
-  if grep -E -n -H -e "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" "$f" >/dev/null 2>&1; then
+  if grep -E -n -H -e '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' "$f" >/dev/null 2>&1; then
     echo "PII: email found in $f"
     FOUND=1
   fi
-  # phone-ish patterns (simple)
-  if grep -E -n -H -e "\b(\+?[0-9]{2,3}[ -]?)?([0-9]{2,4}[ -]?){2,4}[0-9]{2,4}\b" "$f" >/dev/null 2>&1; then
+  if grep -E -n -H -e '\b(\+?[0-9]{2,3}[ -]?)?([0-9]{2,4}[ -]?){2,4}[0-9]{2,4}\b' "$f" >/dev/null 2>&1; then
     echo "PII: phone-like string found in $f"
     FOUND=1
   fi
-  # long quoted block (potential literal citation)
-  if awk '/^>/{count++} !/^>/{ if (count>=5) {print "Long quote block in " FILENAME; exit 0} count=0} END{ if (count>=5) {print "Long quote block in " FILENAME; exit 0}}' "$f" >/dev/null 2>&1; then
+  if awk '/^>/{c++} !/^>/{ if (c>=5) {print "Long quote block in " FILENAME; exit 0} c=0} END{ if (c>=5) {print "Long quote block in " FILENAME; exit 0}}' "$f" >/dev/null 2>&1; then
     echo "CITA-LONG: possible long quoted block in $f"
     FOUND=1
   fi
